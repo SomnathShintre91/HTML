@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bangers&family=Lobster&family=Satisfy&display=swap');
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        /* body {} */
+        
+        .header {
+            width: 100%;
+            margin: 0;
+            padding-left: 10px;
+            /* border: 1px solid #000000; */
+            height: 60px;
+            display: flex;
+            position: fixed;
+            box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.75);
+            /* grid-template-columns: repeat( 2, minmax(10%, 30%));*/
+            /* grid-template-rows: auto; */
+            /* grid-gap: 10px 50px;  */
+            align-items: center;
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+            /* opacity: 0.8; */
+        }
+        
+        .header .backblock {
+            position: relative;
+            height: 86%;
+            width: 30%;
+            background-color: #070707;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #000;
+        }
+        
+        .header .backblock::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: #fff;
+            transform: skew(1.5deg, 1.5deg);
+            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            z-index: -1;
+        }
+        
+        .backblock .name h2 {
+            position: absolute;
+            top: 18%;
+            right: 30%;
+            color: rgba(255, 255, 255, 1);
+            font-family: 'Satisfy', cursive;
+        }
+        
+        .backgrid {
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            /* top: ; */
+            left: 65%;
+            right: 5%;
+            margin-top: 0;
+            margin-bottom: 5%;
+            width: 32%;
+            /* height: 100%; */
+            /* border: 1px solid black; */
+            display: grid;
+            grid-template-columns: repeat( 4, minmax(50px, 80px));
+            grid-template-rows: auto;
+            grid-gap: 25px 40px;
+        }
+        
+        .backgrid .grid {
+            position: relative;
+            height: 200%;
+            background-color: #070707;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #000;
+        }
+        
+        .backgrid .grid::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background-color: #fff;
+            transform: skew(2deg, 2deg);
+            z-index: -1;
+        }
+        
+        .backgrid .grid:nth-child(1)::before {
+            background: linear-gradient(315deg, #FF0057, #E64A19);
+        }
+        
+        .backgrid .grid:nth-child(2)::before {
+            background: linear-gradient(315deg, #89FF00, #00BCD4);
+        }
+        
+        .backgrid .grid:nth-child(3)::before {
+            background: linear-gradient(315deg, #E91E63, #5D02FF);
+        }
+        
+        .backgrid .grid:nth-child(4)::before {
+            background: linear-gradient(315deg, #ff0000, #ffc107);
+        }
+        
+        .backgrid .grid a {
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Satisfy', cursive;
+        }
+        
+        .fullimage {
+            background-image: url('https://i.pinimg.com/originals/df/32/e9/df32e9216f4619c8ff6d996e9ecb77e0.jpg');
+            height: 571px;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -3;
+        }
+        
+        @media only screen and (max-width: 360px) {
+            .header {
+                padding-left: 2px;
+            }
+            .header .backblock {
+                width: 36%;
+            }
+            .backblock .name h2 {
+                right: 5%;
+                font-size: 15px;
+            }
+            .backgrid {
+                left: 60%;
+                width: 18%;
+                display: grid;
+                grid-gap: 4px 8px;
+            }
+            .backgrid .grid {
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="backblock">
+            <div class="name">
+                <h2>sportsChamp.com</h2>
+            </div>
+        </div>
+        <div class="backgrid">
+            <div class="grid">
+                <a href="#">Home</a>
+            </div>
+            <div class="grid">
+                <a href="#">list</a>
+            </div>
+            <div class="grid">
+                <a href="#">About Us</a>
+            </div>
+            <div class="grid">
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="fullimage"></div>
+</body>
+
+</html>

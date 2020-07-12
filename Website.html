@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            /* margin-right: 2px; */
+        }
+        
+        .head {
+            width: 98%;
+            height: 100%;
+            border: 2px solid #1ba77d;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 1% 1% 1% 1%;
+            box-shadow: 0px 2px 10px 13px #1ba77d;
+            justify-content: center;
+            align-items: stretch;
+        }
+        
+        .divimg {
+            padding-left: 2%;
+            width: 10%;
+            height: 100%;
+            /* z-index: -1; */
+        }
+        
+        .line {
+            color: rgb(35, 130, 126);
+        }
+        
+        div h1 {
+            height: 100%;
+            font-size: 250%;
+            /* font-family: 'Permanent Marker', cursive; */
+            font-family: 'Fredoka One', cursive;
+        }
+        
+        .content {
+            /* padding: 16px; */
+            margin-top: 4%;
+            margin-left: 12%;
+            margin-right: 12%;
+            border: 2px solid #FF5733;
+            box-shadow: 0px 0px 31px 16px rgba(255, 87, 51, 1);
+            border-radius: 14px;
+        }
+        
+        .firsts {
+            border: 2px solid black;
+            width: 43%;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        
+        .second {
+            border: 2px solid black;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            width: 43%;
+        }
+        
+        .lastdiv {
+            margin-top: 2%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-bottom: 2%;
+            border: 2px solid black;
+            /* box-shadow: inset 0px 0px 226px 28px rgba(103, 230, 25, 1); */
+            box-shadow: inset 0px 0px 226px -33px rgba(103, 230, 25, 1);
+            text-align: center;
+        }
+        
+        .footer {
+            border: 2px solid black;
+            text-align: center;
+            background-color: #C7E619;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fulldiv">
+        <div class="head">
+            <div class='divimg'>
+                <img src="data:image/png;base64,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"
+                    alt="LOGO" height="100" width="100">
+            </div>
+            <div class="line" style="flex-shrink: 0">
+                <h1>FARMER'S BUDDY</h1>
+            </div>
+        </div>
+        <table class="content">
+            <tr>
+                <td>
+                    <img src="https://www.thehindubusinessline.com/economy/agri-business/7vskk5/article25109329.ece/alternates/LANDSCAPE_435/rice-1jpg" alt="rice crop" height="100%" width="100%">
+                </td>
+                <td class='second'>
+                    <dt><h2>RICE -:</h2></dt>
+                    <dd>Rice is the seed of a grass variety called Oryza sativa and Oryza glaberrima. Paddy plant has a fibrous root with the plant growing upto 6 feet tall. It has a round jointed stem with leaves being long and pointed. The edible seeds
+                        which are sold commercially as ‘rice’ grow on the top in the form of separate stalks. Technically this is called paddy as the seeds are covered with a brown colored husk. The paddy is then harvested and dehusked resulting in the
+                        commercially important rice. Often people confuse rice and paddy. Rice fields are also called as paddy fields.</dd>
+                </td>
+            </tr>
+            <tr>
+                <td class="firsts">
+                    <dt><h2>CORN -:</h2></dt>
+                    <dd>Maize (Zea mays L.) is one of the most versatile emerging crop shaving wider adaptability under varied agro-climatic conditions. Globally, maize is known as queen of cereals because it has the highest genetic yield potential among
+                        the cereals. It is cultivated on nearly 150 m ha in about 160 countries having wider diversity of soil, climate, biodiversity and management practices that contributes 36 % (782 m t) in the global grain production. Maize in India,
+                        contributes nearly 9 % in the national food basket and more than Rs. 100 billion to the agricultural GDP at current prices apart from the generating employment to over 100 million man-days at the farm and downstream agricultural
+                        and industrial sectors. In addition to staple food for human being and quality feed for animals, maize serves as a basic raw material as an ingredient to thousands of industrial products that includes starch, oil, protein, alcoholic
+                        beverages, food sweeteners, pharmaceutical, cosmetic, film, textile, gum, package and paper industries etc.</dd>
+                </td>
+                <td>
+                    <img src="https://www.aces.edu/wp-content/uploads/2018/08/shutterstock_-Zeljko-Radojko_field-corn.jpg" alt="corn image" height="30%" width="100%">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://www.openaccessgovernment.org/wp-content/uploads/2020/01/dreamstime_xxl_121974236.jpg" alt="maize crop" height="20%" width="100%">
+                </td>
+                <td class='second'>
+                    <dt><h2>WHEAT -:</h2></dt>
+                    <dd>Wheat (Triticum spp.) occupies the prime position among the food crops in the world. In India, it is the second important food crop being next to rice and contributes to the total foodgrain production of the country to the extent of
+                        about 25%. Wheat has played a very vital role in stabilizing the foodgrain production in the country over the past few years. The origin of the durum wheats was probably in the region of Abyssinia, whereas the whole group of soft
+                        wheat, which includes the bread wheats, probably originated in the region of Pakistan, SouthWestern and the Southern parts of mountainous Bokhara.</dd>
+            </tr>
+            <tr>
+                <td class="firsts">
+                    <dt><h2>SOYBEAN -:</h2></dt>
+                    <dd>Introduction of Soybean:- Soybean is known as the “GOLDEN BEAN” and Soybeans belong to the legume crop family and are basically native to East Asia. It's botanical name is “Glycine max “ Soybean is an exceptionally nutritive and very
+                        rich protein food. Soybean oil is one of the most popular edible oil used in India.</dd>
+                </td>
+                <td>
+                    <img src="https://agcrops.osu.edu/sites/agcrops/files/newsletter_article/image/soybean-crops1.jpg" alt="syabean image" height="50%" width="100%">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class='lastdiv'>
+        <h3>Contact us:</h3>
+        <p style="margin-bottom: 1px;">Name: Somnath R. Shintre</p>
+        <p style="margin: 1px;">Number: 9359242174</p>
+        <address>Ajja Daddi colony,
+            Gadhinglaj, Tal: Kolhapur.
+        </address>
+        <p style="margin: 1px;">Email:<a href="#">somnathshintre77@gmail.com</a></p>
+    </div>
+    <footer class='footer'>
+        <p>&copy copyright 2020- FARMER'S BUDDY</p>
+    </footer>
+</body>
+
+</html>

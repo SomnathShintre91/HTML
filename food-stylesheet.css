@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Fondamento&family=Sahitya:wght@700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*start - navbar design*/
+nav
+{
+   background-color: black; 
+   /* border: 1px solid black;  */
+   height: 60px;
+   display: flex;
+   width: 100vw; 
+   box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
+   position: fixed;
+   z-index: 2;
+   opacity: .8;
+ 
+}
+#logo
+{
+    border: 1px solid white;
+    width:100px;
+    height: 59px;    
+    margin-right: 10px;
+    
+    margin-left:20px;
+    background-image: url('foodlogo1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;    
+    background-size: cover;
+    border-radius: 50%;
+}
+#tztitle
+{   
+    margin-top: 14px;
+    font-size: 30px;   
+    flex-grow: 1;
+    
+}
+#tztitle h4{
+   letter-spacing: 4px;
+   text-shadow: 5px 3px 3px rgba(0,0,0,0.75);
+   color:#FDFEFE;
+}
+
+nav ul{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 74px;
+}
+
+nav ul li{
+   list-style: none;  
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 15px;
+    color:white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: white;
+   
+    color: black;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+/*end - navbar design*/
+
+/*start - home section*/
+#home-container
+{
+    background-image: url('homeimg1.jpg');
+    height:571px;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    z-index: -1;
+  
+}
+
+#home{
+    /* position: relative; */
+    height:400px;
+    width: 800px;
+    display: flex;
+    flex-direction:column;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100px; */
+    /* padding:3px 200px; */
+    padding-top: 200px;
+    margin-left: 26%;
+}
+
+h1{
+    font-family: 'Baloo 2', cursive;
+    letter-spacing: 2px;
+}
+/*end - home section*/
+
+/*start - service section*/
+#service-container
+{
+    /* border: 2px solid red; */
+    text-align: center;
+}
+
+#service-content
+{
+    display: flex;  
+    justify-content:space-evenly;
+    /* border: 2px solid brown; */
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+/* 
+#service-container::before
+{
+    content: "Service";
+    text-align: center;
+} */
+ 
+.firstdiv
+{
+    
+    width: 300px;
+    height: 400px;
+    border: 1px solid brown;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #FDEBD0;
+   /* padding-left: 6.5%; */
+}
+
+.firstdiv img{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+}
+
+.firstdiv hr{
+    width:100px;
+    margin-left: 33%;
+    
+}
+
+.firstdiv{
+    
+box-shadow: 1px 3px 17px 0px rgba(0,0,0,0.75);
+}
+.firstdiv:hover{
+   
+    box-shadow: inset 1px 3px 17px 0px rgba(0,0,0,0.75);
+}
+/*end - service section*/
+
+/*Utility classes*/
+
+h1{
+    font-size: 45px;
+}
+
+p{
+    font-family:  'Sahitya', serif;
+    font-size: 20px;
+}

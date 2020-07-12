@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            background-color: #F9E79F ;
+        }    
+    </style>
+</head>
+<body>
+    
+     
+    <form action=""  autocomplete="off">
+        <div style="width:40%;" title="Student Registration Section">
+          <fieldset style="background-color: #85C1E9 ;">
+            <legend align="left" style="border: 1px solid orangered;background-color: orangered;color:white;">Personal Information</legend>
+            <table>
+                <caption><h4>Student Registration</h4></caption>    
+                <tr>
+                   <td><label for="">Roll No.</label></td> 
+                   <td>
+                    <input type="text" name="rollno" id="" placeholder="Enter Roll Number" required="required" autofocus>
+                   </td>
+                </tr>
+                <tr>
+                    <td><label for="">Name</label></td>
+                    <td><input type="text" name="name" id="" placeholder="Enter Name" required autocomplete="on" autofocus></td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="" checked>Male
+                        <input type="radio" name="gender" id="">Female    
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Branch</label></td>
+                    <td>
+                        <select name="branch" id="">
+                            <option value="">CSE</option>
+                            <option value="">Civil</option>
+                            <option value="">Mech</option>
+                            <option value="">EE</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Contact</label></td>
+                    <td><input type="number" name="contact" id="" placeholder="Enter Contact"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email</label></td>
+                    <td><input type="email" name="email" id="" placeholder="Enter Email" autocomplete="on"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Address</label></td>
+                    <td><textarea name="address" id="" cols="20" rows="5" placeholder="Enter Address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" class="btn" value="Save"></td>
+                    <td><input type="reset"  class="btn" value="Clear"></td>
+                </tr>
+            </table>    
+        </fieldset>  
+
+        </div>
+
+    </form>
+
+</body>
+</html>

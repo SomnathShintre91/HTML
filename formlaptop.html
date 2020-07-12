@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Orbitron&family=Shadows+Into+Light&family=Yellowtail&display=swap&family=Lobster&family=Orbitron&display=swap" rel="stylesheet">
+    <style>
+        /*#leg {
+            border: 2px solid #ac2e08;
+            border-top-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            background-color: chocolate;
+            color: white;*/
+        /* font-family: 'Yellowtail', cursive; */
+        /* font-family: 'Montserrat Subrayada', sans-serif; */
+        /* font-family: 'Shadows Into Light', cursive; */
+        /*font-family: 'Orbitron', sans-serif;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        }*/
+        
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+        
+        .odiv {
+            border: 3px solid black;
+            /* height: 630px; */
+            height: 100%;
+            /* width: 800px; */
+            background-image: url('https://b.rgbimg.com/users/x/xy/xymonau/300/o99AQEU.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            /* text-align: center; */
+            /* align-content: center; */
+            /* padding: 0 auto; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        #field {
+            border: 2px solid #3030d3a6;
+            border-radius: 26px;
+            /* box-shadow: 0px 0px 40px 4px rgba(51, 24, 77, 0.67); */
+            box-shadow: 0px 0px 65px 25px rgba(0, 0, 0, 1);
+            /* height: 460px;
+            width: 650px; */
+            height: 72.8%;
+            width: 49%;
+            background-color: white;
+            /* align-items: center; */
+            /* align-content: center; */
+            /* margin-top: 75px; */
+            text-align: center;
+            margin: 0 auto;
+        }
+        /* #idiv {
+            size: 25px;
+        } */
+        
+        input[type=text],
+        input[type=email],
+        input[type=password] {
+            height: 30px;
+            /* border: 2px solid black; */
+            border-radius: 20px;
+            border: none;
+            border-bottom: 2px solid rgb(14, 65, 112);
+            /* box-shadow: 62px 49px 61px -55px rgba(0, 0, 0, 0.92); */
+            /* font-family: 'Montserrat Subrayada', sans-serif; */
+            font-family: 'Lobster', cursive;
+            background-image: url('https://cdn3.iconfinder.com/data/icons/gradient-circle/36/2227-512.png');
+            /* background-position: 9px 3px; */
+            background-position: 5% 60%;
+            background-repeat: no-repeat;
+            /* padding-left: 40px; */
+            padding-left: 6.4%;
+            /* background-size: 26px; */
+            background-size: 11%;
+        }
+        
+        input[type=email] {
+            background-image: url('https://cdn.iconscout.com/icon/free/png-256/office-mail-email-letter-message-send-envelope-3-12645.png');
+            /* background-position: 9px 3px;
+            background-repeat: no-repeat;
+            padding-left: 40px;
+            background-size: 26px; */
+        }
+        
+        input[type=password] {
+            background-image: url('https://i.pinimg.com/originals/9c/9a/52/9c9a52cc97dd9a29c1e6a27acb7f1d7b.png');
+            /* background-position: 9px 3px;
+            background-repeat: no-repeat;
+            padding-left: 40px;
+            background-size: 26px; */
+        }
+        
+        input[type=submit] {
+            background-color: #742597;
+            height: 6.5%;
+            width: 31%;
+            font-family: 'Montserrat Subrayada', sans-serif;
+            border-radius: 16px;
+        }
+        
+        input:focus {
+            outline: none;
+        }
+        
+        span {
+            font-family: 'Orbitron', sans-serif;
+        }
+        /* @media only screen and (min-width: 360px) {
+            #field {
+                height: 77%;
+                width: 80%;
+            }
+            input[type=text],
+            input[type=email],
+            input[type=password] {
+                height: 30px;
+                background-position: 5% 55%;
+                padding-left: 15.4%;
+                background-size: 11%;
+            }
+            input[type=submit] {
+                background-color: #EB7653;
+                height: 6.5%;
+                width: 55%;
+            }
+        } */
+        /* @media only screen and (min-width: 640px) {
+            html,
+            body {
+                height: 130%;
+            }
+            #field {
+                height: 77%;
+                width: 80%;
+            }
+            h1 {
+                margin-top: 3%;
+                margin-bottom: 3%;
+            }
+            input[type=text],
+            input[type=email],
+            input[type=password] {
+                height: 28px;
+                background-position: 5% 55%;
+                padding-left: 15.4%;
+                background-size: 10%;
+            }
+            input[type=submit] {
+                background-color: #EB7653;
+                height: 6.5%;
+                width: 55%;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class='odiv'>
+
+        <fieldset id='field'>
+
+            <form action="" method="get"></form>
+            <!-- <legend id='leg'>Stundent Registration</legend> -->
+
+            <h1 style="text-align: center; font-family: 'Shadows Into Light', cursive;">Sign Up</h1>
+
+            <div id='idiv'><input class="" type="text" name="Username" placeholder="Username" required="" size="25px" autofocus></div><br>
+            <div><input class="" text type="email" name="email" placeholder="Email" required="" size="25px"></div><br>
+            <div><input class="" type="password" name="password" placeholder="Password" required="" size="25px"></div><br>
+            <div><input class="" type="password" name="password" placeholder="Confirm Password" required="" size="25px"></div><br><br>
+
+            <label class="anim">
+                        <input type="checkbox" class="checkbox" required="">
+                        <span>I Agree To The Terms & Conditions</span>
+                    </label>
+            <br><br><br>
+            <input type="submit" value="CREATE ACCOUNT" size="30px">
+            </form>
+
+            <p style="font-family: 'Orbitron', sans-serif;">Don't have an Account? <a href="#"> Login Now!</a></p>
+
+        </fieldset>
+
+    </div>
+</body>
+
+</html>

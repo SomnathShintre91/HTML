@@ -1,0 +1,205 @@
+/* CSS For Body Starting */
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bangers&family=Lobster&family=Satisfy&display=swap');
+body {
+    /* background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAA1BMVEUAAACnej3aAAAAR0lEQVR4nO3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO8GxYgAAb0jQ/cAAAAASUVORK5CYII='); */
+    background-color: #000;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 25px 50px;
+}
+
+.container .box {
+    position: relative;
+    height: 400px;
+    background-color: #070707;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.container .box::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-color: #fff;
+    transform: skew(2deg, 2deg);
+    z-index: -1;
+}
+
+.container .box:nth-child(1n+1)::before {
+    background: linear-gradient(315deg, #FF0057, #E64A19);
+}
+
+.container .box:nth-child(4n+2)::before {
+    background: linear-gradient(315deg, #89FF00, #00BCD4);
+}
+
+.container .box:nth-child(4n+3)::before {
+    background: linear-gradient(315deg, #E91E63, #5D02FF);
+}
+
+.container .box:nth-child(4n+4)::before {
+    background: linear-gradient(315deg, #ff0000, #ffc107);
+}
+
+.container .box:nth-child(n):hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    background-image: url('https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX6701644.jpg');
+    z-index: 1;
+}
+
+.container .box:nth-child(2):hover::after {
+    background-image: url('https://images.megapixl.com/1089/10896093.jpg');
+}
+
+.container .box:nth-child(3):hover::after {
+    background-image: url('https://i.pinimg.com/originals/03/b8/98/03b8981604154ed459e9d67087fa77c7.jpg');
+}
+
+.container .box:nth-child(4):hover::after {
+    background-image: url('https://wallpaperbasketball.com/wp-content/uploads/2018/12/Basketball-iPhone-6-Wallpaper.jpg');
+}
+
+.container .box:nth-child(5):hover::after {
+    background-image: url('https://thumbs.dreamstime.com/b/low-angle-view-field-hockey-stick-ball-field-grass-deliberate-shallow-depth-field-background-copy-space-103105547.jpg');
+}
+
+.container .box:nth-child(6):hover::after {
+    background-image: url('https://cdn.britannica.com/81/198481-050-10CED2D9/Gilberto-Godoy-Filho-ball-Brazil-Argentina-volleyball-2007.jpg');
+}
+
+.container .box:nth-child(7):hover::after {
+    background-image: url('https://lh3.googleusercontent.com/proxy/EczquPr7fQR08fZ_Ac_GsicrX47il5jdKVgXWgWPXa7xEUGT553hh-qklqq37fDNbbENIEFZgNK_N4PUqNkqf5GHdo9Rr7kIGXvlS3JfVurju8rXXKwBt2XHnoA0xl36HjLe19Dbasr0-kyAXGpZdQ6s1vBA');
+}
+
+.container .box:nth-child(8):hover::after {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRr2iZsMIsR37F7v260gTnKPYBlfKF1RboyMQ&usqp=CAU');
+}
+
+.container .box:nth-child(9):hover::after {
+    background-image: url('https://i.pinimg.com/474x/ca/30/1c/ca301c9a2e179c3012ad99cf7fa640bc.jpg');
+}
+
+.container .box:nth-child(10):hover::after {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRt-KJpyx3umT7AoBaldWSkeYYgjjoL7zG_fw&usqp=CAU');
+}
+
+.container .box:nth-child(11):hover::after {
+    background-image: url('https://www.desktopbackground.org/download/720x1280/2015/10/27/1033039_download-wallpapers-3840x2400-club-bowling-balls-ultra-hd-4k-hd_3840x2400_h.jpg');
+}
+
+.container .box:nth-child(12):hover::after {
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-creative-badminton-admission-poster-background-image_159336.jpg');
+}
+
+.container .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.04);
+    pointer-events: none;
+}
+
+.content {
+    position: relative;
+    padding: 20px;
+    transform: translateY(40px);
+}
+
+.box .content h2 {
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 160px;
+    color: rgba(255, 255, 255, 0.05);
+    transition: 0.5s;
+    font-family: 'Satisfy', cursive;
+}
+
+.box:hover .content h2 {
+    top: -140px;
+    color: #fff;
+    font-family: 'Satisfy', cursive;
+}
+
+.box .content h3 {
+    margin: 0 0 0 15px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Lobster', cursive;
+}
+
+.box .content p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Amatic SC', cursive;
+}
+
+.box .content a {
+    position: relative;
+    margin: 10px 0 0 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    color: #fff;
+    display: inline-block;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+    font-family: 'Bangers', cursive;
+}
+
+.box:hover .content a {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    font-family: 'Bangers', cursive;
+}
+
+.box .content a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* CSS For Body Ending */

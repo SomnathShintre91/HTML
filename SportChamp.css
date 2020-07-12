@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bangers&family=Lobster&family=Satisfy&display=swap');
+.header {
+    width: 100%;
+    margin: 0;
+    padding-left: 10px;
+    /* border: 1px solid #000000; */
+    height: 60px;
+    display: flex;
+    position: fixed;
+    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.75);
+    /* grid-template-columns: repeat( 2, minmax(10%, 30%));*/
+    /* grid-template-rows: auto; */
+    /* grid-gap: 10px 50px;  */
+    align-items: center;
+    background: linear-gradient(90deg, rgba(235, 13, 208, 1) 8%, rgba(50, 255, 249, 1) 57%, rgba(0, 222, 3, 1) 91%);
+    /* opacity: 0.8; */
+    z-index: 5;
+}
+
+.header .backblock {
+    position: relative;
+    height: 86%;
+    width: 30%;
+    background-color: #070707;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.header .backblock::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    transform: skew(1.5deg, 1.5deg);
+    /* background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%); */
+    background: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    z-index: -1;
+}
+
+.backblock .name h2 {
+    position: absolute;
+    top: -26%;
+    right: 30%;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Satisfy', cursive;
+}
+
+.backgrid {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    /* top: ; */
+    left: 65%;
+    right: 5%;
+    margin-top: 0;
+    margin-bottom: 5%;
+    width: 32%;
+    /* height: 100%; */
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat( 4, minmax(50px, 80px));
+    grid-template-rows: auto;
+    grid-gap: 25px 40px;
+}
+
+.backgrid .grid {
+    position: relative;
+    height: 200%;
+    background-color: #070707;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.backgrid .grid::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-color: #fff;
+    transform: skew(2deg, 2deg);
+    z-index: -1;
+}
+
+.backgrid .grid:nth-child(1)::before {
+    background: linear-gradient(315deg, #FF0057, #E64A19);
+}
+
+.backgrid .grid:nth-child(2)::before {
+    background: linear-gradient(315deg, #89FF00, #00BCD4);
+}
+
+.backgrid .grid:nth-child(3)::before {
+    background: linear-gradient(315deg, #E91E63, #5D02FF);
+}
+
+.backgrid .grid:nth-child(4)::before {
+    background: linear-gradient(315deg, #ff0000, #ffc107);
+}
+
+.backgrid .grid a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Satisfy', cursive;
+}
+
+.backgrid .grid:hover a {
+    color: #000;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.fullimage {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/126/117/95/quote-motivational-digital-art-typography-wallpaper-preview.jpg');
+    height: 600px;
+    width: 100%;
+    padding-top: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* z-index: -3; */
+    margin-bottom: 4%;
+}
+
+@media only screen and (max-width: 420px) {
+    .header {
+        padding-left: 2px;
+    }
+    .header .backblock {
+        width: 36%;
+    }
+    .backblock .name h2 {
+        right: 5%;
+        font-size: 15px;
+    }
+    .backgrid {
+        left: 60%;
+        width: 18%;
+        display: grid;
+        grid-gap: 4px 8px;
+    }
+    .backgrid .grid {
+        height: 100%;
+    }
+    .fullimage {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSmTaJS0sJxYnT9lrEyEGPr7yHhn8-s97hJrg&usqp=CAU');
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .header {
+        padding-left: 8px;
+    }
+    .header .backblock {
+        width: 36%;
+    }
+    .backblock .name h2 {
+        right: 32%;
+        top: -25%;
+        font-size: 25px;
+    }
+    .backgrid {
+        left: 56%;
+        width: 40%;
+        display: grid;
+        grid-gap: 4px 8px;
+    }
+    .backgrid .grid {
+        height: 100%;
+    }
+}
+
+
+/* css nav end */
+
+.list h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: 'Bangers', cursive;
+}
+
+
+/* CSS For Body Starting */
+
+body {
+    /* background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAA1BMVEUAAACnej3aAAAAR0lEQVR4nO3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO8GxYgAAb0jQ/cAAAAASUVORK5CYII='); */
+    background-color: #000;
+    /* display: flex; */
+    position: relative;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 25px 50px;
+}
+
+.container .box {
+    position: relative;
+    height: 400px;
+    background-color: #070707;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.container .box::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-color: #fff;
+    transform: skew(2deg, 2deg);
+    z-index: -3;
+}
+
+.container .box:nth-child(1n+1)::before {
+    background: linear-gradient(315deg, #FF0057, #E64A19);
+}
+
+.container .box:nth-child(4n+2)::before {
+    background: linear-gradient(315deg, #89FF00, #00BCD4);
+}
+
+.container .box:nth-child(4n+3)::before {
+    background: linear-gradient(315deg, #E91E63, #5D02FF);
+}
+
+.container .box:nth-child(4n+4)::before {
+    background: linear-gradient(315deg, #ff0000, #ffc107);
+}
+
+.container .box:nth-child(n):hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    background-image: url('https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX6701644.jpg');
+    z-index: 1;
+}
+
+.container .box:nth-child(2):hover::after {
+    background-image: url('https://images.megapixl.com/1089/10896093.jpg');
+}
+
+.container .box:nth-child(3):hover::after {
+    background-image: url('https://i.pinimg.com/originals/03/b8/98/03b8981604154ed459e9d67087fa77c7.jpg');
+}
+
+.container .box:nth-child(4):hover::after {
+    background-image: url('https://wallpaperbasketball.com/wp-content/uploads/2018/12/Basketball-iPhone-6-Wallpaper.jpg');
+}
+
+.container .box:nth-child(5):hover::after {
+    background-image: url('https://thumbs.dreamstime.com/b/low-angle-view-field-hockey-stick-ball-field-grass-deliberate-shallow-depth-field-background-copy-space-103105547.jpg');
+}
+
+.container .box:nth-child(6):hover::after {
+    background-image: url('https://cdn.britannica.com/81/198481-050-10CED2D9/Gilberto-Godoy-Filho-ball-Brazil-Argentina-volleyball-2007.jpg');
+}
+
+.container .box:nth-child(7):hover::after {
+    background-image: url('https://cellularnews.com/wp-content/uploads/2020/03/boxing-timeout-325x485.jpg');
+}
+
+.container .box:nth-child(8):hover::after {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRr2iZsMIsR37F7v260gTnKPYBlfKF1RboyMQ&usqp=CAU');
+}
+
+.container .box:nth-child(9):hover::after {
+    background-image: url('https://i.pinimg.com/474x/ca/30/1c/ca301c9a2e179c3012ad99cf7fa640bc.jpg');
+}
+
+.container .box:nth-child(10):hover::after {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRt-KJpyx3umT7AoBaldWSkeYYgjjoL7zG_fw&usqp=CAU');
+}
+
+.container .box:nth-child(11):hover::after {
+    background-image: url('https://www.desktopbackground.org/download/720x1280/2015/10/27/1033039_download-wallpapers-3840x2400-club-bowling-balls-ultra-hd-4k-hd_3840x2400_h.jpg');
+}
+
+.container .box:nth-child(12):hover::after {
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-creative-badminton-admission-poster-background-image_159336.jpg');
+}
+
+.container .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.04);
+    pointer-events: none;
+}
+
+.content {
+    position: relative;
+    padding: 20px;
+    transform: translateY(40px);
+}
+
+.box .content h2 {
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 160px;
+    color: rgba(255, 255, 255, 0.05);
+    transition: 0.5s;
+    font-family: 'Satisfy', cursive;
+}
+
+.box:hover .content h2 {
+    top: -140px;
+    color: #fff;
+    font-family: 'Satisfy', cursive;
+}
+
+.box .content h3 {
+    margin: 0 0 0 15px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Lobster', cursive;
+}
+
+.box .content p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Amatic SC', cursive;
+}
+
+.box .content a {
+    position: relative;
+    margin: 10px 0 0 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    color: #fff;
+    display: inline-block;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+    font-family: 'Bangers', cursive;
+}
+
+.box:hover .content a {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    font-family: 'Bangers', cursive;
+}
+
+.box .content a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* CSS For Body Ending */
+
+.footer {
+    border: 2px solid black;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(204, 235, 13, 1) 6%, rgba(50, 227, 255, 1) 50%, rgba(162, 9, 149, 1) 100%);
+}
